@@ -8,15 +8,16 @@ export const PlanetCard = ({ planet, id, uid }) => {
   const isFavorite = store.favorites.some((favorite) => favorite.uid === uid && favorite.type === "planet");
 
   return (
-    <div className="card text-align" style={{ width: "18rem" }}>
+    <div className="card text-align border-primary m-2" style={{ width: "18rem" }}>
       <img
         src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/planets/${uid}.jpg?raw=true`}
         className="card-img-top"
+        style={{ height: "17rem" }}
         alt="..."
       />
       <div className="card-body">
         <h5 className="card-title">{planet?.name}</h5>
-        <div className="card-text">
+        <div className="card-text" style={{ height: "10rem" }}>
           <p>population: {planet?.population}</p>
           <p>climate: {planet?.climate}</p>
           <p>terrain: {planet?.terrain}</p>

@@ -8,15 +8,16 @@ export const VehicleCard = ({ vehicle, uid, id }) => {
   const isFavorite = store.favorites.find((favorite) => favorite.type === "vehicle" && favorite.uid == uid);
 
   return (
-    <div className="card text-align" style={{ width: "18rem" }}>
+    <div className="card text-align border-primary m-2" style={{ width: "18rem" }}>
       <img
         src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/vehicles/${uid}.jpg?raw=true`}
         className="card-img-top"
+        style={{ height: "17rem" }}
         alt="..."
       />
       <div className="card-body">
         <h5 className="card-title">{vehicle?.name}</h5>
-        <div className="card-text">
+        <div className="card-text" style={{ height: "10rem" }}>
           <p>model: {vehicle?.model}</p>
           <p>crew: {vehicle?.crew}</p>
           <p>manufacturer: {vehicle?.manufacturer}</p>

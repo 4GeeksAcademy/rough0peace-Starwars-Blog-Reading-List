@@ -5,7 +5,7 @@ export const Navbar = () => {
   const { store, dispatch } = useGlobalReducer();
 
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav className="navbar navbar-light bg-secondary">
       <div className="container">
         <Link to="/">
           <span className="navbar-brand mb-0 h1">Star Wars</span>
@@ -24,6 +24,7 @@ export const Navbar = () => {
             <ul
               className="dropdown-menu dropdown-menu-end"
               aria-labelledby="favoritesDropdown"
+              style={{ listStyleType: "none" }}
             >
               {store.favorites.length === 0 ? (
                 <li className="dropdown-item text-muted">No favorites</li>
