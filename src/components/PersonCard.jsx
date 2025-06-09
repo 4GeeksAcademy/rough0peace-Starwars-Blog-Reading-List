@@ -17,7 +17,7 @@ export const PersonCard = ({ person, uid, id }) => {
   );
 
   return (
-    <div className="card text-align border-primary m-2" style={{ width: "18rem", height: "auto" }}>
+    <div className="card text-align border-warning m-2" style={{ width: "18rem", height: "auto" }}>
       <img
         src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/${uid}.jpg?raw=true`}
         className="card-img-top"

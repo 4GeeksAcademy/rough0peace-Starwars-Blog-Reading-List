@@ -17,12 +17,12 @@ export const Home = () => {
   return (
     <div className="databaseBody mt-5 bg-secondary">
       <ul className="list-group d-flex">
-        <div className="container">
+        <div className="container border border-warning bg-dark-subtle mb-5" style={{ width: "80%" }}>
           <h1 className="title d-flex justify-content-center text-warning border border-warning bg-warning-subtle m-auto" style={{ width: 200 }}>
             {" "}
             People{" "}
           </h1>
-          <div className="scrollmenu d-flex overflow-x-scroll mb-5">
+          <div className="scrollmenu d-flex overflow-x-scroll mb-1">
             {store.peopleList?.map((person, index) => {
               // console.log("person", person.properties);
               return (
@@ -38,9 +38,9 @@ export const Home = () => {
           </div>
         </div>
         <br></br>
-        <div className="container">
+        <div className="container border border-warning bg-dark-subtle mb-5" style={{ width: "80%" }}>
           <h1 className="title d-flex justify-content-center text-warning border border-warning bg-warning-subtle m-auto" style={{ width: 200 }}> Planets </h1>
-          <div className="scrollmenu d-flex overflow-x-scroll mb-5">
+          <div className="scrollmenu d-flex overflow-x-scroll mb-1">
             {store.planetsList?.map((planet, index) => {
               // console.log("planet", planet.properties);
               return (
@@ -56,9 +56,9 @@ export const Home = () => {
           </div>
         </div>
         <br></br>
-        <div className="container">
+        <div className="container border border-warning bg-dark-subtle mb-5" style={{ width: "80%" }}>
           <h1 className="title d-flex justify-content-center text-warning border border-warning bg-warning-subtle m-auto" style={{ width: 200 }}> Vehicles </h1>
-          <div className="scrollmenu d-flex overflow-x-scroll mb-5">
+          <div className="scrollmenu d-flex overflow-x-scroll mb-1">
             {store.vehiclesList?.map((vehicle, index) => {
               // console.log("vehicle", vehicle.properties);
               return (

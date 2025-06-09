@@ -8,7 +8,7 @@ export const VehicleCard = ({ vehicle, uid, id }) => {
   const isFavorite = store.favorites.find((favorite) => favorite.type === "vehicle" && favorite.uid == uid);
 
   return (
-    <div className="card text-align border-primary m-2" style={{ width: "18rem" }}>
+    <div className="card text-align border-warning m-2" style={{ width: "18rem", height: "auto" }}>
       <img
         src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/vehicles/${uid}.jpg?raw=true`}
         className="card-img-top"
@@ -22,7 +22,7 @@ export const VehicleCard = ({ vehicle, uid, id }) => {
           <p>crew: {vehicle?.crew}</p>
           <p>manufacturer: {vehicle?.manufacturer}</p>
         </div>
-        <Link to={`/vehicle/${uid}`}>See more</Link>
+        <Link to={`/vehicle/${uid}`}>Learn more</Link>
         <button
           className={`btn ms-2 ${isFavorite ? "btn-warning" : "btn-outline-warning"}`}
           onClick={() =>
