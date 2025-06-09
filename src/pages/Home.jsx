@@ -17,7 +17,7 @@ export const Home = () => {
   return (
     <div className="databaseBody mt-5 bg-secondary">
       <ul className="list-group d-flex">
-        <div className="container border border-warning bg-dark-subtle mb-5" style={{ width: "80%" }}>
+        <div className="container border border-warning rounded-2 bg-dark-subtle mb-5" style={{ width: "80%" }}>
           <h1 className="title d-flex justify-content-center text-warning border border-warning bg-warning-subtle m-auto" style={{ width: 200 }}>
             {" "}
             People{" "}
@@ -38,7 +38,7 @@ export const Home = () => {
           </div>
         </div>
         <br></br>
-        <div className="container border border-warning bg-dark-subtle mb-5" style={{ width: "80%" }}>
+        <div className="container border border-warning rounded-2 bg-dark-subtle mb-5" style={{ width: "80%" }}>
           <h1 className="title d-flex justify-content-center text-warning border border-warning bg-warning-subtle m-auto" style={{ width: 200 }}> Planets </h1>
           <div className="scrollmenu d-flex overflow-x-scroll mb-1">
             {store.planetsList?.map((planet, index) => {
@@ -56,7 +56,7 @@ export const Home = () => {
           </div>
         </div>
         <br></br>
-        <div className="container border border-warning bg-dark-subtle mb-5" style={{ width: "80%" }}>
+        <div className="container border border-warning rounded-2 bg-dark-subtle mb-5" style={{ width: "80%" }}>
           <h1 className="title d-flex justify-content-center text-warning border border-warning bg-warning-subtle m-auto" style={{ width: 200 }}> Vehicles </h1>
           <div className="scrollmenu d-flex overflow-x-scroll mb-1">
             {store.vehiclesList?.map((vehicle, index) => {
