@@ -11,7 +11,7 @@ export const Navbar = () => {
           <span className="navbar-brand mb-0 h1">Star Wars</span>
         </Link>
         <div className="ml-auto">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" style={{ listStyleType: "none" }}>
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -24,7 +24,6 @@ export const Navbar = () => {
             <ul
               className="dropdown-menu dropdown-menu-end"
               aria-labelledby="favoritesDropdown"
-              style={{ listStyleType: "none" }}
             >
               {store.favorites.length === 0 ? (
                 <li className="dropdown-item text-muted">No favorites</li>
